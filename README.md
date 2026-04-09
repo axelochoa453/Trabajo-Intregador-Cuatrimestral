@@ -1,7 +1,7 @@
 #Trabajo Integrador
 
 ##Descripcion
-Esta pagina web esta
+Esta pagina web esta destinada como un blog de la saga de juegos metro con informacion general de los mismos
 
 ##Contenido
 -Menu Principal para navegacion interna dentro de la pagina
