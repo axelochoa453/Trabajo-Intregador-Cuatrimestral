@@ -1,0 +1,130 @@
+
+.lora {
+font-family: "Lora", serif;
+font-optical-sizing: auto;
+font-weight: 400;
+font-style: normal;
+}
+.diplomata-regular {
+font-family: "Diplomata", serif;
+font-weight: 400;
+font-style: normal;
+}
+.trykker-regular {
+  font-family: "Trykker", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.bungee-regular {
+  font-family: "Bungee", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.bodoni-moda .universo {
+  font-family: "Bodoni Moda", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.rubik-marker-hatch-regular {
+  font-family: "Rubik Marker Hatch", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+.universo {
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+.origen h2{
+    font-family: "Diplomata", serif;
+    font-size: 23px;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.origen p {
+    font-family: "Rubik Marker Hatch", system-ui;
+    font-weight: 400;
+    font-size: 17px;
+    font-style: normal;
+}
+
+.videojuegos figcaption {
+    font-family: "Bungee", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.videojuegos img {
+    width: 100px;
+}
+
+:root {
+  background-color: #101820;
+  padding: 5px;
+}
+
+body{
+  color: #f5f5f5;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+    color: white;
+    background-color: #1f2a38;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.otras_novelas a{
+  text-decoration: none;
+  color: white;
+  background-color: #1f2a38;
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.otras_novelas a:hover {
+  background-color: #d6a756;
+  transform: scale(1.1);
+}
+
+nav a:hover {
+  background-color: #d6a756;
+  transform: scale(1.1);
+}
+
+section {
+  margin: 20px;
+  padding: 20px;
+  border: 2px solid rgb(#d6a756);
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.5);
+  border-radius: 12px;
+}
+
+img {
+  border-radius: 10px;
+}
+
+input,textarea {
+  border-radius: 8px;
+}

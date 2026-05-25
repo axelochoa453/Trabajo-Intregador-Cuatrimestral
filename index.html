@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="https://cdn2.steamgriddb.com/icon/c32f7c8bde605f29bb9c115bc85713a8.ico" type="image x-icon">
-    <title>blog Metro</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Bungee&family=Diplomata&family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rubik+Marker+Hatch&family=Trykker&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="pagina">
 
     <header>
         <h1>Metro (Juegos y Novela)</h1>
@@ -25,14 +28,14 @@
 
     </header>
     
-    <main>
-        <section id="origen">
+    <main class="">
+        <article class="origen" id="origen">
             <h2>Origen</h2>
             <p>La saga de juegos Metro estan basadas en las novelas de Dmitry Glukhovsky's; 
                 Metro 2033, Metro 2034, Metro 2035</p>
-        </section>
+            </article>
 
-            <article id="universo">
+            <article class="universo" id="universo">
             <h2>Universo de Metro</h2>
             <p>En 2013 hay una guerra nuclear (la tercera guerra mundial) y la población superviviente de Moscú decide resguardarse en el subsuelo,
                 dentro del metro moscovita distribuyéndose por los kilómetros de estaciones y túneles.<br>Cada estación se ha organizado socialmente 
@@ -52,12 +55,11 @@
                 otras tantas estaciones, las que no han sido abandonadas o destruidas, forman alianzas independientes, siendo VNDKh una de ellas y en la que empieza la historia. <br></p>
             </article>
 
-
-        <section id="video">
+        <section class="video" id="video">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/zdl2jarVaEE?si=CMAajHfgBQGE5AOk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </section>
 
-        <section id="novelas">
+        <section class="novelas" id="novelas">
             <h2>Novelas</h2>
             <table>
                 <tr>
@@ -83,37 +85,29 @@
                 </table>
         </section>
 
-        <section id="videojuegos">
+        <section class="videojuegos" id="videojuegos">
             <h2>Videojuegos</h2>
-            <figure>
-                <img src="assets/Metro2033GameNeutralBoxArt.webp" alt="Metro 2033">
-                <figcaption>Metro 2033</figcaption>
-            </figure>
-            <figure>
-                <img src="assets/MetroLastLightNeutralBoxArt.webp" alt="Metro Last Light">
-                <figcaption>Metro Last Light</figcaption>
-            </figure>
-            <figure>
-                <img src="assets/Metro_Redux_Boxart.webp" alt="Metro Redux (2033 y Last Light)">
-                <figcaption>Metro Redux</figcaption>
-            </figure>
-            <figure>
-                <img src="assets/CoverArtMetroExodus.webp" alt="Metro Exodus">
-                <figcaption>Metro Exodus</figcaption>
-            </figure>
-            <figure>
-                <img src="assets/Metro_awakening_keyart_vertical.webp" alt="Metro Awakening">
-                <figcaption>Metro Awakening</figcaption>
-            </figure>
+
+            <div class="cards">
+                </div class="card">
+                    <img src="assets/Metro2033GameNeutralBoxArt.webp" alt="">
+                    <figcaption>Metro 2033</figcaption>
+                <div>
+
+                <div class="card">
+                    <img src="assets/MetroLastLightNeutralBoxArt.webp" alt="">
+                    <figcaption>Metro Last Light</figcaption>
+                </div>
+            <div>
         </section>
 
-        <section id="otras_novelas">
+        <section class="otras_novelas" id="otras_novelas">
             <h3>Otras novelas</h3>
             <a href="https://metrovideogame.fandom.com/wiki/Universe_of_Metro_2033_(Book_Series)">ir a otras novelas del universo Metro</a>
             <br><br>
         </section>
 
-        <section id="contacto">
+        <section class="contacto" id="contacto">
             <form action="get">
                 <h3>Contacto:</h3>
                 <input type="text" name="Nombre" placeholder="Nombre" required><br><br>
