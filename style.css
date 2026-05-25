@@ -128,3 +128,59 @@ img {
 input,textarea {
   border-radius: 8px;
 }
+
+.cards {
+  display: flex;
+  gap: 20px;
+}
+
+.card {
+  background-color: #1f2a38;
+  padding: 15px;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 15px rgba(0,0,0,0.6);
+}
+
+.contacto button{
+  background-color: white;
+  color: rgb(0, 0, 0);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.contacto button:hover {
+  background-color: #d6a756;
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px){
+
+    nav ul{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cards{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px){
+
+    h1{
+        font-size: 24px;
+    }
+
+    iframe{
+        width: 100%;
+        height: auto;
+    }
+}
