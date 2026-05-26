@@ -68,13 +68,18 @@ font-style: normal;
     width: 100px;
 }
 
-:root {
-  background-color: #101820;
-  padding: 5px;
+:root{
+  --color-fondo: #101820;
+  --color-principal: #1f2a38;
+  --color-secundario: #d6a756;
+  --color-texto: #f5f5f5;
 }
 
 body{
-  color: #f5f5f5;
+  background-color: var(--color-fondo);
+  background: linear-gradient(to bottom, #101820, #1b2838);
+    color: #f5f5f5;
+    font-family: "Lora", serif;
 }
 
 nav ul {
@@ -88,7 +93,7 @@ nav ul {
 nav a {
   text-decoration: none;
     color: white;
-    background-color: #1f2a38;
+    background-color: var(--color-principal);
     padding: 10px 15px;
     border-radius: 8px;
     transition: 0.3s;
@@ -97,26 +102,26 @@ nav a {
 .otras_novelas a{
   text-decoration: none;
   color: white;
-  background-color: #1f2a38;
+  background-color: var(--color-principal);
   padding: 10px 15px;
   border-radius: 8px;
   transition: 0.3s;
 }
 
 .otras_novelas a:hover {
-  background-color: #d6a756;
+  background-color: var(--color-secundario);
   transform: scale(1.1);
 }
 
 nav a:hover {
-  background-color: #d6a756;
+  background-color: var(--color-secundario);
   transform: scale(1.1);
 }
 
 section {
   margin: 20px;
   padding: 20px;
-  border: 2px solid rgb(#d6a756);
+  border: 2px solid var(--color-secundario);
   box-shadow: 0px 4px 10px rgba(0,0,0,0.5);
   border-radius: 12px;
 }
@@ -129,21 +134,34 @@ input,textarea {
   border-radius: 8px;
 }
 
-.cards {
-  display: flex;
-  gap: 20px;
-}
-
-.card {
-  background-color: #1f2a38;
+.card_1 {
+  background-color: #585b5e;
   padding: 15px;
   border-radius: 12px;
   transition: 0.3s;
 }
 
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0px 6px 15px rgba(0,0,0,0.6);
+.card_2 {
+  background-color: #585b5e;
+  padding: 15px;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.card_1:hover,
+.card_2:hover{
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 15px rgba(0,0,0,0.6);
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td{
+    border: 1px solid white;
+    padding: 10px;
 }
 
 .contacto button{
@@ -157,7 +175,7 @@ input,textarea {
 }
 
 .contacto button:hover {
-  background-color: #d6a756;
+  background-color: var(--color-secundario);
   transform: scale(1.05);
 }
 
@@ -170,6 +188,9 @@ input,textarea {
 
     .cards{
         flex-direction: column;
+        display: flex;
+        gap: 20px;
+        justify-content: center;
     }
 }
 
