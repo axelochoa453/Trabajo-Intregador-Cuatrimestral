@@ -11,26 +11,26 @@ font-weight: 400;
 font-style: normal;
 }
 .trykker-regular {
-  font-family: "Trykker", serif;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Trykker", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 .bungee-regular {
-  font-family: "Bungee", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Bungee", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .bodoni-moda .universo {
-  font-family: "Bodoni Moda", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Bodoni Moda", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 .rubik-marker-hatch-regular {
-  font-family: "Rubik Marker Hatch", system-ui;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Rubik Marker Hatch", system-ui;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .universo {
@@ -40,17 +40,12 @@ font-style: normal;
     font-style: normal;
 }
 
-.origen h2{
-    font-family: "Diplomata", serif;
-    font-size: 23px;
-    font-weight: 600;
-    font-style: normal;
-}
+
 
 .origen p {
-    font-family: "Rubik Marker Hatch", system-ui;
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
     font-weight: 400;
-    font-size: 17px;
     font-style: normal;
 }
 
@@ -65,15 +60,45 @@ font-style: normal;
 }
 
 :root{
-  --color-fondo: #101820;
-  --color-principal: #1f2a38;
-  --color-secundario: #d6a756;
-  --color-texto: #f5f5f5;
+    --color-fondo: #101820;
+    --color-principal: #1f2a38;
+    --color-secundario: #d6a756;
+    --color-texto: #f5f5f5;
+}
+
+.banner{
+    width: 1350px;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.banner img{
+    width: 1350px;
+    height: 300px;
+    object-fit: cover;
+    object-position: center top;;
+}
+
+.banner::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        rgba(0,0,0,0.2),
+        rgba(0,0,0,0.6)
+    );
 }
 
 body{
-  background-color: var(--color-fondo);
-  background: linear-gradient(to bottom, #101820, #1b2838);
+    background-color: var(--color-fondo);
+    background: linear-gradient(to bottom, #101820, #1b2838);
     color: #f5f5f5;
     font-family: "Lora", serif;
 }
@@ -98,9 +123,9 @@ h1{
 }
 
 h2 {
-  text-align: center;
-  color: var(--color-secundario);
-  text-shadow: 1px 2px 5px #000;
+    text-align: center;
+    color: var(--color-secundario);
+    text-shadow: 1px 2px 5px #000;
 }
 
 section,
@@ -122,15 +147,15 @@ article:hover{
 }
 
 nav ul {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  list-style: none;
-  padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
 }
 
 nav a {
-  text-decoration: none;
+    text-decoration: none;
     color: white;
     background: rgba(255,255,255,0.08);
     padding: 12px 18px;
@@ -147,60 +172,77 @@ nav a:hover{
 }
 
 .otras_novelas a{
-  text-decoration: none;
-  color: white;
-  background-color: var(--color-principal);
-  padding: 10px 15px;
-  border-radius: 8px;
-  transition: 0.3s;
+    text-decoration: none;
+    color: white;
+    background-color: var(--color-principal);
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: 0.3s;
 }
 
 .otras_novelas a:hover {
-  background-color: var(--color-secundario);
-  transform: scale(1.1);
+    background-color: var(--color-secundario);
+    transform: scale(1.1);
 }
 
 nav a:hover {
-  background-color: var(--color-secundario);
-  transform: scale(1.1);
+    background-color: var(--color-secundario);
+    transform: scale(1.1);
+}
+
+section,
+article{
+    animation: aparecer 1s ease;
+}
+
+@keyframes aparecer{
+    from{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
 }
 
 section {
-  margin: 20px;
-  padding: 20px;
-  border: 2px solid var(--color-secundario);
-  box-shadow: 0px 4px 10px rgba(0,0,0,0.5);
-  border-radius: 12px;
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid var(--color-secundario);
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.5);
+    border-radius: 12px;
 }
 
 img {
-  border-radius: 10px;
+    border-radius: 10px;
 }
 
 input,textarea {
-  border-radius: 8px;
+    border-radius: 8px;
 }
 
-.card_1 {
-  padding: 15px;
-  border-radius: 12px;
-  transition: 0.3s;
-}
-
-.card_2 {
-  padding: 15px;
-  border-radius: 12px;
-  transition: 0.3s;
+.card_1,
+.card_2,
+.card_3,
+.card_4{
+    padding: 15px;
+    border-radius: 12px;
+    transition: 0.3s;
 }
 
 .card_1:hover,
-.card_2:hover{
+.card_2:hover,
+.card_3:hover,
+.card_4:hover{
     transform: translateY(-5px);
     box-shadow: 0px 6px 15px rgba(0,0,0,0.6);
 }
 
 .card_1 img,
-.card_2 img{
+.card_2 img,
+.card_3 img,
+.card_4 img{
     width: 7%;
     border-radius: 12px;
     transition: 0.4s;
@@ -213,35 +255,72 @@ input,textarea {
 
 table{
     width: 100%;
-    border-collapse: collapse;
+    border-collapse: separate;
     overflow: hidden;
-    border-radius: 15px;
+    background-color:#1f2a38;
 }
 
 th{
-    background-color: #d6a756;
+    background-color: var(--color-secundario);
     color: black;
+    border-radius: 10px;
 }
 
 th,
 td{
     padding: 14px;
     border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 10px;
+}
+
+tr:hover{
+    background-color:rgba(214,167,86,.2);
+}
+
+input,
+textarea{
+    background-color: var(--color-fondo);
+    color: white;
+    border: 1px solid rgba(255,255,255,0.15);
+    padding: 12px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+input:focus,
+textarea:focus{
+    outline: none;
+    border-color: var(--color-secundario);
+    box-shadow: 0px 0px 10px rgba(214,167,86,0.5);
+}
+
+button{
+    border: none;
+    padding: 12px;
+    border-radius: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px rgba(214,167,86,0.5);
 }
 
 .contacto button{
-  background-color: white;
-  color: rgb(0, 0, 0);
-  padding: 10px 20px;
-  border: none;
-  border-radius: 8px;
-  transition: 0.3s;
-  cursor: pointer;
+    background-color: white;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    transition: 0.3s;
+    cursor: pointer;
 }
 
 .contacto button:hover {
-  background-color: var(--color-secundario);
-  transform: scale(1.05);
+    background-color: var(--color-secundario);
+    transform: scale(1.05);
 }
 
 @media (max-width: 768px){
@@ -250,6 +329,11 @@ td{
         flex-direction: column;
         align-items: center;
     }
+
+    .banner img{
+        height: 300px;
+    }
+
 
     .cards{
         flex-direction: column;
@@ -263,6 +347,10 @@ td{
 
     h1{
         font-size: 24px;
+    }
+
+    .banner img{
+        height: 220px;
     }
 
     iframe{
