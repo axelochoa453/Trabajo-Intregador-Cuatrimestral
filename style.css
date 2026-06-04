@@ -1,14 +1,14 @@
 
 .lora {
-font-family: "Lora", serif;
-font-optical-sizing: auto;
-font-weight: 400;
-font-style: normal;
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 .diplomata-regular {
-font-family: "Diplomata", serif;
-font-weight: 400;
-font-style: normal;
+    font-family: "Diplomata", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 .trykker-regular {
     font-family: "Trykker", serif;
@@ -40,13 +40,19 @@ font-style: normal;
     font-style: normal;
 }
 
-
-
 .origen p {
     font-family: "Lora", serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+}
+
+.video h3{
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 17px;
 }
 
 .videojuegos figcaption {
@@ -67,20 +73,20 @@ font-style: normal;
 }
 
 .banner{
-    width: 1350px;
+    width: 90%;
+    max-width: 1350px;
     margin: 20px auto;
     overflow: hidden;
     border-radius: 15px;
     position: relative;
-    overflow: hidden;
-    border-radius: 15px;
 }
 
 .banner img{
-    width: 1350px;
-    height: 300px;
+    width: 100%;
+    height: 250px;
     object-fit: cover;
-    object-position: center top;;
+    object-position: center top;
+    display: block;
 }
 
 .banner::after{
@@ -114,7 +120,7 @@ header{
 
 h1{
     text-align: center;
-    font-size: 3rem;
+    font-size: clamp(2rem, 5vw, 3rem);
     color: var(--color-secundario);
     text-shadow:
         0px 0px 5px #000,
@@ -185,15 +191,6 @@ nav a:hover{
     transform: scale(1.1);
 }
 
-nav a:hover {
-    background-color: var(--color-secundario);
-    transform: scale(1.1);
-}
-
-section,
-article{
-    animation: aparecer 1s ease;
-}
 
 @keyframes aparecer{
     from{
@@ -206,12 +203,17 @@ article{
     }
 }
 
-section {
-    margin: 20px;
-    padding: 20px;
+section,
+article{
+    background: rgba(255,255,255,0.04);
     border: 2px solid var(--color-secundario);
-    box-shadow: 0px 4px 10px rgba(0,0,0,0.5);
-    border-radius: 12px;
+    border-left: 5px solid var(--color-secundario);
+    border-radius: 18px;
+    padding: 25px;
+    margin: 30px auto;
+    width: 90%;
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.5);
+    transition: 0.3s;
 }
 
 img {
@@ -225,7 +227,8 @@ input,textarea {
 .card_1,
 .card_2,
 .card_3,
-.card_4{
+.card_4,
+.card_5{
     padding: 15px;
     border-radius: 12px;
     transition: 0.3s;
@@ -234,7 +237,8 @@ input,textarea {
 .card_1:hover,
 .card_2:hover,
 .card_3:hover,
-.card_4:hover{
+.card_4:hover,
+.card_5:hover{
     transform: translateY(-5px);
     box-shadow: 0px 6px 15px rgba(0,0,0,0.6);
 }
@@ -242,14 +246,19 @@ input,textarea {
 .card_1 img,
 .card_2 img,
 .card_3 img,
-.card_4 img{
-    width: 7%;
+.card_4 img,
+.card_5 img{
+    width: 160px;
+    max-width: 100%;
     border-radius: 12px;
     transition: 0.4s;
 }
 
 .card_1:hover img,
-.card_2:hover img{
+.card_2:hover img,
+.card_3:hover img,
+.card_4:hover img,
+.card_5:hover img{
     transform: scale(1.08);
 }
 
@@ -309,8 +318,9 @@ button:hover{
 }
 
 .contacto button{
-    background-color: white;
+    background-color: var(--color-secundario);
     color: rgb(0, 0, 0);
+    font-weight: bold;
     padding: 10px 20px;
     border: none;
     border-radius: 8px;
@@ -323,6 +333,18 @@ button:hover{
     transform: scale(1.05);
 }
 
+.contacto textarea{
+    width: 100%;
+    max-width: 600px;
+    height: 200px;
+}
+
+.pie_pagina p{
+    font-family: "Trykker", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
 @media (max-width: 768px){
 
     nav ul{
@@ -330,16 +352,12 @@ button:hover{
         align-items: center;
     }
 
-    .banner img{
-        height: 300px;
-    }
-
 
     .cards{
-        flex-direction: column;
-        display: flex;
-        gap: 20px;
-        justify-content: center;
+        display:flex;
+        justify-content:center;
+        gap:25px;
+        flex-wrap:wrap;
     }
 }
 
@@ -349,9 +367,6 @@ button:hover{
         font-size: 24px;
     }
 
-    .banner img{
-        height: 220px;
-    }
 
     iframe{
         width: 100%;
