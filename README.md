@@ -28,14 +28,11 @@ Esta pagina web esta destinada como un blog informativo de la saga Metro, basada
 
 ## Estructura
 
-Proyecto/
-|
-├── index.html
-├── style.css
-|
-└── assets/
-    ├── imagenes
-    └── banner principal
+- index.html
+- style.css
+- assets/
+    - imagenes
+    - banner principal
 
 ## autor
 Axel Diego Ochoa
