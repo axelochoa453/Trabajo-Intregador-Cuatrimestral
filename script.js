@@ -30,3 +30,45 @@ function buscarJuego() {
 
 }
 
+const formulario = document.getElementById("formulario");
+
+formulario.addEventListener("submit", validarFormulario);
+
+function validarFormulario(e){
+
+    e.preventDefault();
+
+    const nombre = formulario.Nombre.value.trim();
+    const email = formulario.email.value.trim();
+    const comentario = formulario.comentarios.value.trim();
+
+    const mensaje = document.getElementById("mensaje");
+
+    try{
+
+        if(nombre === ""){
+            throw new Error("Debe ingresar un nombre.");
+        }
+
+        if(!email.includes("@")){
+            throw new Error("Ingrese un email válido.");
+        }
+
+        if(comentario.length < 10){
+            throw new Error("El comentario debe tener al menos 10 caracteres.");
+        }
+
+        mensaje.style.color = "lightgreen";
+        mensaje.textContent = "Formulario enviado correctamente.";
+
+        formulario.reset();
+
+    }catch(error){
+
+        mensaje.style.color = "tomato";
+        mensaje.textContent = error.message;
+
+    }
+
+}
+
