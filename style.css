@@ -175,18 +175,22 @@ nav a:hover{
     transform: translateY(-3px);
 }
 
-.otras_novelas a{
-    text-decoration: none;
-    color: white;
-    background-color: var(--color-principal);
-    padding: 10px 15px;
-    border-radius: 8px;
-    transition: 0.3s;
+#btnCuriosidad{
+    background-color: var(--color-secundario);
+    color: black;
+    font-weight: bold;
+    margin-top: 15px;
 }
 
-.otras_novelas a:hover {
-    background-color: var(--color-secundario);
-    transform: scale(1.1);
+#textoCuriosidad{
+    margin-top: 15px;
+    padding: 15px;
+    border-left: 4px solid var(--color-secundario);
+    background: rgba(255,255,255,.05);
+    border-radius: 10px;
+    font-style: italic;
+    min-height: 25px;
+    transition: .3s;
 }
 
 

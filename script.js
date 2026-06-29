@@ -30,6 +30,33 @@ function buscarJuego() {
 
 }
 
+const curiosidades = [
+
+    "Metro 2033 fue escrito por Dmitry Glukhovsky y publicado inicialmente en Internet.",
+
+    "Las balas militares funcionan como moneda dentro del Metro de Moscú.",
+
+    "Los Oscuros son una nueva especie surgida tras la guerra nuclear.",
+
+    "Artyom es el protagonista de la trilogía principal de los videojuegos.",
+
+    "Metro Exodus fue el primer juego de la saga con un mundo mucho más abierto."
+
+];
+
+const botonCuriosidad = document.getElementById("btnCuriosidad");
+const textoCuriosidad = document.getElementById("textoCuriosidad");
+
+botonCuriosidad.addEventListener("click", mostrarCuriosidad);
+
+function mostrarCuriosidad(){
+
+    const numeroAleatorio = Math.floor(Math.random() * curiosidades.length);
+
+    textoCuriosidad.textContent = curiosidades[numeroAleatorio];
+
+}
+
 const formulario = document.getElementById("formulario");
 
 formulario.addEventListener("submit", validarFormulario);
