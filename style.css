@@ -256,6 +256,17 @@ input,textarea {
     transform: scale(1.08);
 }
 
+.resaltada{
+    transform: scale(1.1);
+    border: 3px solid var(--color-secundario);
+    box-shadow: 0 0 20px rgba(214,167,86,.8);
+    opacity: 1;
+}
+
+.atenuada{
+    opacity: .3;
+}
+
 table{
     width: 100%;
     border-collapse: separate;
