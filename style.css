@@ -193,7 +193,15 @@ nav a:hover{
     transition: .3s;
 }
 
+#ordenarJuegos{
 
+    margin:20px auto;
+    display:block;
+    background:var(--color-secundario);
+    color:black;
+    font-weight:bold;
+
+}
 
 @keyframes aparecer{
     from{
