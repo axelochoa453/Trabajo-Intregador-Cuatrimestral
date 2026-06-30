@@ -33,7 +33,7 @@ Esta pagina web esta destinada como un blog informativo de la saga Metro, basada
 - Diseño adaptable para tablets y celulares
 
 ## 📂 Estructura
-
+```
 Proyecto/
 │
 ├── index.html
@@ -48,6 +48,7 @@ Proyecto/
     ├── CoverArtMetroExodus.webp
     ├── Metro_awakening_keyart_vertical.webp
     └── 6EFFBEDKTZCKPPZIQ3A46GGJRQ.jpg
+```
 
 ## autor
 Axel Diego Ochoa
