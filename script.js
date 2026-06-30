@@ -1,3 +1,7 @@
+// =======================
+// BUSCADOR
+// =======================
+
 const buscador = document.getElementById("buscador");
 const cards = document.querySelectorAll(
 ".card_1, .card_2, .card_3, .card_4, .card_5"
@@ -30,6 +34,10 @@ function buscarJuego() {
 
 }
 
+// =======================
+// CURIOSIDADES
+// =======================
+
 const curiosidades = [
 
     "Metro 2033 fue escrito por Dmitry Glukhovsky y publicado inicialmente en Internet.",
@@ -56,6 +64,10 @@ function mostrarCuriosidad(){
     textoCuriosidad.textContent = curiosidades[numeroAleatorio];
 
 }
+
+// =======================
+// VALIDACIÓN DEL FORMULARIO
+// =======================
 
 const formulario = document.getElementById("formulario");
 
@@ -99,3 +111,29 @@ function validarFormulario(e){
 
 }
 
+// =======================
+// ORDENAR VIDEOJUEGOS
+// =======================
+
+const botonOrdenar = document.getElementById("ordenarJuegos");
+
+botonOrdenar.addEventListener("click", ordenarJuegos);
+
+function ordenarJuegos(){
+
+    const contenedor = document.querySelector(".cards");
+
+    const juegos = Array.from(contenedor.children);
+
+    juegos.sort(function(a,b){                                                      
+        return a.dataset.anio - b.dataset.anio;
+
+    });
+
+    juegos.forEach(function(juego){
+
+        contenedor.appendChild(juego);
+
+    });
+
+}
